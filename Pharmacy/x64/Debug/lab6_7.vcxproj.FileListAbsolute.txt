@@ -1,0 +1,9 @@
+C:\Users\OTI\OneDrive\Desktop\De toate\Materii\OOP\lab6_7\x64\Debug\lab6_7.exe
+C:\Users\OTI\OneDrive\Desktop\De toate\Materii\OOP\lab6_7\x64\Debug\lab6_7.exe.lastcodeanalysissucceeded
+C:\Users\OTI\OneDrive\Desktop\De toate\Materii\OOP\lab6_7\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7\x64\Debug\lab6_7.exe
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7\x64\Debug\lab6_7.exe.lastcodeanalysissucceeded
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7 - vector\x64\Debug\lab6_7.exe.lastcodeanalysissucceeded
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7 - vector\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7 - vector\x64\Debug\lab6_7.exe

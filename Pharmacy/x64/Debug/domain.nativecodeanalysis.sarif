@@ -1,0 +1,148 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.31.31104.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00007FF605329CC0 -il C:\\Users\\OTI\\AppData\\Local\\Temp\\_CL_b345bbbeast -typedil -f domain.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1931 -D_MSC_FULL_VER=193131104 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -permissive- -Fox64\\Debug\\domain.obj -Fdx64\\Debug\\vc143.pdb -external:W 4 -Gd -analyze:projectdirectory C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\OOP\\lab6_7 - vector -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.6.2\\Include\\um -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include -external:I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.6.2\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.6.2\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/test.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "482c71f30d81cf16ecf58e508a87431fcd36144f2d27058864ec5fa952ac655a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/test.h"
+          },
+          "hashes": {
+            "sha-256": "eaf4c6329e43827edc1cd0171195e249ddfd8f2bc3820419dbe49eaf7252996f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/domain.h"
+          },
+          "hashes": {
+            "sha-256": "b7a7b32b9ab5885276a182f7d4a4f832f5bc46adc4e5eaeabf33c31769c90637"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/repo.h"
+          },
+          "hashes": {
+            "sha-256": "7cdeb9170ea59eca8ad3dc3a6c4e01a243fff150718922f81eb93568cd384f00"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/vectorclass.h"
+          },
+          "hashes": {
+            "sha-256": "d482021f0037ac34a998e0209826686948ee2ac158a7f299cc1da90e265074e8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/service.h"
+          },
+          "hashes": {
+            "sha-256": "772a45987f36794b13fc7df938ab76ba5ad4fdbaf03d8d904afed3f3dfbf142f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/validator.h"
+          },
+          "hashes": {
+            "sha-256": "b26b34b6913ecd11dcf63db622ac6cd29876ad1b987c7de5f1335eca8e92509c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/ui.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "edfb19af94b5b6844652a798148bb362f0cd16f4e07c18e81719999d23745585"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/ui.h"
+          },
+          "hashes": {
+            "sha-256": "cc7ab12f3d5f73d4c7e6368b675df394c7c3a50bd703c6bb3c970d65a39c86f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/OTI/OneDrive/Desktop/Facultate/Materii/OOP/lab6_7 - vector/service.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "8e74af6aa5f643cf7e71ca0f32dae8cc97f7b42ad4151ac2e267372f870b2a67"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "7053929e841e49386dba6139326973c85887c6bfcb5e5d8dabe4435c2c788c6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/repo.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "b6d5a0662a125d9d8ded99bb5f4ee8d4b4f2029eea235eb54cf1f503a56fb31e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/oti/onedrive/desktop/facultate/materii/oop/lab6_7 - vector/domain.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1227dda275bf2f63ffc098674f9e0a89bf5ab2450c426c77da5c0b47116c57a8"
+          }
+        }
+      ]
+    }
+  ]
+}

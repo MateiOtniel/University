@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\OOP\lab6_7 - vector\</FILEPATH>
+      <FILENAME>service.cpp</FILENAME>
+      <LINE>61</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>Service::sort</FUNCTION>
+    <DECORATED>?sort@Service@@QEAAPEAV?$vector@VMedicament@@V?$allocator@VMedicament@@@std@@@std@@H@Z</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

@@ -1,0 +1,10 @@
+1,Zori la Semineu,Petre Ispirescu,1990
+2,Catelul meu,Claudiu Costea,2021
+3,Adevarul gol golut,Andrei Cizmas,1950
+4,Alba ca zapada,Ion Creanga,1800
+5,Morometii,Camil Petrescu,1995
+6,Luceafarul,Mihai Eminescu,1890
+7,Deu,Petre Ispirescu,1803
+8,Zori de dimineata,Mihai Blaga,1670
+9,Ion,Mihai Eminescu,1900
+10,Ultima noapte,Camil Petrescu,1840
