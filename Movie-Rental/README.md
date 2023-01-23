@@ -1,4 +1,4 @@
-# Phyton-Project---Movie-Rental
+#Movie-Rental
 
 This is a project for university.
 
