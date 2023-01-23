@@ -1,0 +1,148 @@
+Complexity metrics,Mon, 21 Nov 2022 19:23:53 EET
+Method,CogC,ev(G),iv(G),v(G)
+Main.main(String[]),0,1,1,1
+Main.returnSaveMethod(),5,4,4,4
+"domain.Friendship.Friendship(int, int, LocalDateTime)",0,1,1,1
+domain.Friendship.getFrom(),0,1,1,1
+domain.Friendship.getTime(),0,1,1,1
+domain.Friendship.getTo(),0,1,1,1
+domain.Friendship.setFrom(int),0,1,1,1
+domain.Friendship.setTime(LocalDateTime),0,1,1,1
+domain.Friendship.setTo(int),0,1,1,1
+domain.Friendship.toString(),0,1,1,1
+"domain.Message.Message(String, String, String)",0,1,1,1
+domain.Message.getFrom(),0,1,1,1
+domain.Message.getMessage(),0,1,1,1
+domain.Message.getTo(),0,1,1,1
+"domain.User.User(int, String, String, String, String)",0,1,1,1
+domain.User.equals(Object),4,3,7,9
+domain.User.getEmail(),0,1,1,1
+domain.User.getFirstName(),0,1,1,1
+domain.User.getFriends(),0,1,1,1
+domain.User.getId(),0,1,1,1
+domain.User.getLastName(),0,1,1,1
+domain.User.getMessages(),0,1,1,1
+domain.User.getPassword(),0,1,1,1
+domain.User.hashCode(),0,1,1,1
+domain.User.setEmail(String),0,1,1,1
+domain.User.setFirstName(String),0,1,1,1
+domain.User.setFriends(List<Friendship>),0,1,1,1
+domain.User.setId(int),0,1,1,1
+domain.User.setLastName(String),0,1,1,1
+domain.User.setMessages(Message[]),0,1,1,1
+domain.User.setPassword(String),0,1,1,1
+domain.User.toString(),0,1,1,1
+exceptions.ExitException.getMessage(),0,1,1,1
+exceptions.InputException.InputException(),0,1,1,1
+exceptions.InputException.InputException(String),0,1,1,1
+exceptions.InputException.getMessage(),0,1,1,1
+exceptions.NetworkException.NetworkException(),0,1,1,1
+exceptions.NetworkException.NetworkException(String),0,1,1,1
+exceptions.NetworkException.getMessage(),0,1,1,1
+exceptions.RepositoryException.RepositoryException(),0,1,1,1
+exceptions.RepositoryException.RepositoryException(String),0,1,1,1
+exceptions.RepositoryException.getMessage(),0,1,1,1
+repository.abstractrepo.AbstractFriendshipRepository.AbstractFriendshipRepository(),0,1,1,1
+"repository.abstractrepo.AbstractFriendshipRepository.DFS(Integer, HashMap<Integer, Integer>, boolean[], List<Integer>)",4,1,3,3
+"repository.abstractrepo.AbstractFriendshipRepository.DFS(int, HashMap<Integer, Integer>, boolean[])",4,1,3,3
+repository.abstractrepo.AbstractFriendshipRepository.add(Friendship),3,2,3,4
+repository.abstractrepo.AbstractFriendshipRepository.addUser(int),0,1,1,1
+repository.abstractrepo.AbstractFriendshipRepository.biggestCommunity(List<Integer>),7,1,5,5
+"repository.abstractrepo.AbstractFriendshipRepository.friendshipExists(int, int)",3,3,2,3
+repository.abstractrepo.AbstractFriendshipRepository.numberOfCommunities(),4,1,4,4
+repository.abstractrepo.AbstractFriendshipRepository.remove(int),1,1,2,2
+"repository.abstractrepo.AbstractFriendshipRepository.removeFriend(int, int)",2,2,3,4
+repository.abstractrepo.AbstractUserRepository.AbstractUserRepository(),0,1,1,1
+repository.abstractrepo.AbstractUserRepository.add(User),0,1,1,1
+repository.abstractrepo.AbstractUserRepository.checkNewUser(String),3,3,2,3
+repository.abstractrepo.AbstractUserRepository.getAll(),0,1,1,1
+repository.abstractrepo.AbstractUserRepository.getUserById(Integer),3,3,2,3
+repository.abstractrepo.AbstractUserRepository.isNewId(int),3,3,2,3
+repository.abstractrepo.AbstractUserRepository.remove(int),1,2,1,2
+repository.abstractrepo.AbstractUserRepository.userExists(int),4,4,2,4
+"repository.db.DBFriendshipRepository.DBFriendshipRepository(String, String, String)",0,1,1,1
+"repository.db.DBFriendshipRepository.addDataDB(Connection, PreparedStatement)",4,1,3,4
+repository.db.DBFriendshipRepository.read(),4,1,3,4
+repository.db.DBFriendshipRepository.save(),1,1,1,2
+"repository.db.DBUserRepository.DBUserRepository(String, String, String)",0,1,1,1
+repository.db.DBUserRepository.add(User),0,1,1,1
+repository.db.DBUserRepository.addUserInDB(User),1,1,1,2
+repository.db.DBUserRepository.read(),2,1,2,3
+repository.db.DBUserRepository.remove(int),1,2,1,2
+repository.db.DBUserRepository.removeUserFromDB(int),1,1,1,2
+repository.db.DBUserRepository.save(),0,1,1,1
+repository.file.FileFriendshipRepository.FileFriendshipRepository(String),0,1,1,1
+repository.file.FileFriendshipRepository.read(),7,1,5,5
+repository.file.FileFriendshipRepository.save(),6,1,5,5
+repository.file.FileUserRepository.FileUserRepository(String),0,1,1,1
+repository.file.FileUserRepository.read(),2,1,3,3
+repository.file.FileUserRepository.save(),2,1,3,3
+"service.UserService.UserService(MailValidator, NameValidator, DBUserRepository, DBFriendshipRepository)",0,1,1,1
+"service.UserService.UserService(MailValidator, NameValidator, FileUserRepository, FileFriendshipRepository)",0,1,1,1
+"service.UserService.addFriend(int, int)",0,1,1,1
+"service.UserService.addUser(String, String, String, String)",1,1,2,2
+service.UserService.biggestCommunity(),3,2,3,3
+service.UserService.getAll(),0,1,1,1
+service.UserService.getInstance(int),2,2,1,2
+service.UserService.numberOfCommunities(),0,1,1,1
+"service.UserService.removeFriend(int, int)",0,1,1,1
+service.UserService.removeUser(int),0,1,1,1
+"service.UserService.validateInput(String, String, String)",0,1,1,1
+test.Test.runAllTests(),0,1,1,1
+test.Test.testValidator(),8,1,9,9
+user_interface.Console.Console(UserService),0,1,1,1
+user_interface.Console.addFriend(),2,2,2,3
+user_interface.Console.addUser(),3,1,4,4
+user_interface.Console.biggestCommunity(),0,1,1,1
+user_interface.Console.getInput(),0,1,1,1
+user_interface.Console.headerInfo(),0,1,1,1
+user_interface.Console.manageTask(String),1,2,1,10
+user_interface.Console.numberOfCommunities(),0,1,1,1
+user_interface.Console.removeFriend(),2,2,2,3
+user_interface.Console.removeUser(),1,1,2,2
+user_interface.Console.runLogin(),5,2,4,4
+user_interface.Console.showAll(),1,1,2,2
+user_interface.Console.showInfo(),0,1,1,1
+validators.MailValidator.validate(String),1,2,1,2
+validators.NameValidator.validate(String),1,2,1,2
+
+Class,OCavg,OCmax,WMC
+Main,2.50,4,5
+domain.Friendship,1.00,1,8
+domain.Message,1.00,1,4
+domain.User,1.11,3,20
+exceptions.ExitException,1.00,1,1
+exceptions.InputException,1.00,1,3
+exceptions.NetworkException,1.00,1,3
+exceptions.RepositoryException,1.00,1,3
+repository.abstractrepo.AbstractFriendshipRepository,2.80,5,28
+repository.abstractrepo.AbstractUserRepository,2.25,4,18
+repository.db.DBFriendshipRepository,2.00,3,8
+repository.db.DBUserRepository,1.29,2,9
+repository.file.FileFriendshipRepository,3.00,4,9
+repository.file.FileUserRepository,1.67,2,5
+service.UserService,1.36,3,15
+test.Test,1.00,1,2
+user_interface.Console,2.08,11,27
+utils.Constants,n/a,n/a,0
+validators.MailValidator,2.00,2,2
+validators.NameValidator,2.00,2,2
+
+Package,v(G)avg,v(G)tot
+,2.50,5
+domain,1.27,38
+exceptions,1.00,10
+repository.abstractrepo,2.67,48
+repository.db,2.09,23
+repository.file,3.00,18
+service,1.36,15
+test,5.00,10
+user_interface,2.62,34
+validators,2.00,4
+
+Module,v(G)avg,v(G)tot
+SocialNetwork,1.95,205
+
+Project,v(G)avg,v(G)tot
+project,1.95,205
+

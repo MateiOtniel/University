@@ -1,0 +1,11 @@
+1 Jucator1 CNS 1 Taurii
+2 Jucator2 CNS 1 Taurii
+3 Jucator3 CNS 1 Taurii
+4 Jucator4 CNS 1 Taurii
+5 Jucator5 CNS 1 Taurii
+6 Jucator6 CNS 1 Taurii
+7 Jucator7 CNSB 2 Pisicile
+8 Jucator8 CNSB 2 Pisicile
+9 Jucator9 CNSB 2 Pisicile
+10 Jucator10 CNSB 2 Pisicile
+11 Jucator11 CNSB 2 Pisicile

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="all" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.user_interface.MessagesController">
+   <children>
+      <VBox layoutX="8.0" layoutY="8.0" prefHeight="384.0" prefWidth="244.0">
+         <children>
+            <HBox prefHeight="31.0" prefWidth="260.0">
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="60.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="30.0" prefWidth="65.0" text="Back" />
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="194.0" text="Friends" />
+               </children>
+            </HBox>
+            <ListView fx:id="friendsList" prefHeight="346.0" prefWidth="244.0">
+               <padding>
+                  <Insets top="8.0" />
+               </padding></ListView>
+         </children>
+      </VBox>
+      <TableView fx:id="messagesTable" layoutX="260.0" layoutY="-32.0" prefHeight="384.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="messageFrom" prefWidth="170.0" text="C1" />
+            <TableColumn fx:id="messageTo" prefWidth="170.0" text="C1" />
+        </columns>
+      </TableView>
+      <TextField fx:id="messageText" layoutX="260.0" layoutY="360.0" prefHeight="31.0" prefWidth="194.0" />
+      <Button fx:id="sendBtn" layoutX="534.0" layoutY="360.0" minWidth="44.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="31.0" prefWidth="60.0" text="Send" />
+      <Button layoutX="460.0" layoutY="360.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+   </children>
+</AnchorPane>

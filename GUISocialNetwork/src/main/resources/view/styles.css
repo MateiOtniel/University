@@ -1,0 +1,128 @@
+/*
+Baby Blue
+#E7F2F8
+Aquamarine
+#74BDCB
+Salmon
+#FFA384
+Freesia
+#EFE7BC
+ */
+
+.root {
+    /*This applies styling for the root node*/
+    -fx-babyblue: white;
+    -fx-aquamarine: #0fa3b1;
+    -fx-salmon:#f7a072;
+    -fx-freesia: #ff9b42;
+    -fx-white: #EDF7F6;
+    -fx-background-color: -fx-babyblue;
+    -fx-font-size: 15px;
+    -fx-font-family: "Calibri";
+}
+
+#all{
+    -fx-background-color: -fx-babyblue;
+    -fx-font-size: 15px;
+}
+
+
+#pane, #searchPane, #friendRequestsPane{
+    -fx-background-color: -fx-babyblue;
+    -fx-border-radius: 10px;
+    -fx-border-width: 3px;
+    -fx-border-color: -fx-aquamarine;
+    -fx-padding: 10px;
+}
+
+.button{
+    -fx-background-color: -fx-salmon;
+    -fx-text-fill: -fx-white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-border-color: -fx-freesia;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+#messagesBtn{
+    -fx-background-color: #930c23;
+}
+
+.button:hover{
+    -fx-opacity: 0.9;
+    -fx-cursor: hand;
+}
+
+.table-view, .list-view{
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-text-fill: -fx-white;
+    -fx-cursor: hand;
+}
+
+.table-view .column-header .label, .list-view .column-header .label{
+    -fx-text-fill: -fx-white;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler,
+.list-view .column-header,
+.list-view .column-header .filler,
+.list-view .column-header-background .filler{
+    -fx-background-color: -fx-aquamarine;
+}
+
+.table-view .table-cell, .list-view .list-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected, .list-cell:selected{
+    -fx-text-background-color: red;
+}
+
+.table-row-cell: hover, .list-cell: hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+
+.table-row-cell: odd, .list-cell: odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell: even, .list-cell: even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-aquamarine;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-font-weight: bold;
+}
+
+#selectedUserLabel{
+    -fx-font-weight: bold;
+    -fx-border-color: -fx-aquamarine;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-font-size: 17px;
+}
+
+#passwordText:hover, #search:hover{
+    -fx-border-color: -fx-freesia;
+    -fx-cursor: hand;
+}

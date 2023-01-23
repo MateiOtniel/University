@@ -1,0 +1,15 @@
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\bin\Debug\net6.0\NBA.exe
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\bin\Debug\net6.0\NBA.deps.json
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\bin\Debug\net6.0\NBA.runtimeconfig.json
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\bin\Debug\net6.0\NBA.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\bin\Debug\net6.0\NBA.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.csproj.AssemblyReference.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.AssemblyInfoInputs.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.AssemblyInfo.cs
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.csproj.CoreCompileInputs.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\refint\NBA.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\NBA.genruntimeconfig.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MAP\NBA\NBA\obj\Debug\net6.0\ref\NBA.dll
