@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.MainController">
+   <children>
+      <Label layoutX="14.0" layoutY="27.0" prefHeight="26.0" prefWidth="64.0" text="Nume" />
+      <TextField fx:id="numeTxt" layoutX="78.0" layoutY="28.0" />
+      <Label layoutX="14.0" layoutY="53.0" prefHeight="26.0" prefWidth="64.0" text="Prenume" />
+      <TextField fx:id="prenumeTxt" layoutX="78.0" layoutY="54.0" />
+      <Label layoutX="14.0" layoutY="79.0" prefHeight="26.0" prefWidth="64.0" text="Username" />
+      <TextField fx:id="usernameTxt" layoutX="78.0" layoutY="80.0" />
+      <Label layoutX="14.0" layoutY="105.0" prefHeight="26.0" prefWidth="64.0" text="Parola" />
+      <PasswordField fx:id="parolaTxt" layoutX="78.0" layoutY="106.0" />
+      <Label layoutX="14.0" layoutY="131.0" prefHeight="26.0" prefWidth="64.0" text="Oras" />
+      <ComboBox fx:id="oras" layoutX="77.0" layoutY="132.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="157.0" prefHeight="26.0" prefWidth="64.0" text="Strada" />
+      <Label layoutX="14.0" layoutY="183.0" prefHeight="26.0" prefWidth="64.0" text="Numar" />
+      <Label layoutX="14.0" layoutY="209.0" prefHeight="26.0" prefWidth="64.0" text="Telefon" />
+      <Button layoutX="86.0" layoutY="244.0" mnemonicParsing="false" onAction="#inregistrare" text="Inregistrare" />
+      <ListView fx:id="persoaneListView" layoutX="242.0" layoutY="27.0" prefHeight="238.0" prefWidth="506.0" />
+      <TextField fx:id="stradaTxt" layoutX="78.0" layoutY="158.0" />
+      <TextField fx:id="numarTxt" layoutX="78.0" layoutY="184.0" />
+      <TextField fx:id="telefonTxt" layoutX="78.0" layoutY="210.0" />
+   </children>
+</Pane>
