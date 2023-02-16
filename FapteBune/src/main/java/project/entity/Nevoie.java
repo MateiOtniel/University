@@ -2,7 +2,7 @@ package project.entity;
 
 import java.time.LocalDateTime;
 
-public class Nevoie extends Entity{
+public class Nevoie extends Entity {
     private String titlu;
 
     private String descriere;
@@ -23,6 +23,16 @@ public class Nevoie extends Entity{
         this.omInNevoie = omInNevoie;
         this.omSalvator = omSalvator;
         this.status = status;
+    }
+
+    public Nevoie(Nevoie nevoie){
+        super(nevoie.getId());
+        this.titlu = nevoie.getTitlu();
+        this.descriere = nevoie.getDescriere();
+        this.deadline = nevoie.getDeadline();
+        this.omInNevoie = nevoie.getOmInNevoie();
+        this.omSalvator = nevoie.getOmSalvator();
+        this.status = nevoie.getStatus();
     }
 
     public String getTitlu() {

@@ -6,10 +6,11 @@ import project.entity.Persoana;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
-public class RepositoryNevoie implements IRepository<Nevoie>{
+public class RepositoryNevoie implements IRepository<Nevoie> {
 
-    private ArrayList<Nevoie> list;
+    private List<Nevoie> list;
     private final String URL;
     private final String user;
     private final String password;
@@ -28,10 +29,6 @@ public class RepositoryNevoie implements IRepository<Nevoie>{
         save();
     }
 
-    @Override
-    public void remove(int id) {
-
-    }
 
     @Override
     public void save() {
@@ -80,27 +77,20 @@ public class RepositoryNevoie implements IRepository<Nevoie>{
     }
 
     public ArrayList<Nevoie> getAll() {
-        return list;
+        return (ArrayList<Nevoie>) list;
     }
 
     public long getMaxId() {
         long id = 0;
-        for(Nevoie nevoie : list)
-            if(nevoie.getId() > id)
+        for (Nevoie nevoie : list)
+            if (nevoie.getId() > id)
                 id = nevoie.getId();
         return id;
     }
 
-    public Nevoie getById(long id) {
-        for(Nevoie nevoie : list)
-            if(nevoie.getOmInNevoie() == id)
-                return nevoie;
-        return null;
-    }
-
     public void ajuta(Nevoie nevoie, Persoana persoana) {
-        for(Nevoie n : list)
-            if(n.getId() == nevoie.getId()) {
+        for (Nevoie n : list)
+            if (n.getId() == nevoie.getId()) {
                 n.setOmSalvator(persoana.getId());
                 n.setStatus("Erou gasit!");
             }

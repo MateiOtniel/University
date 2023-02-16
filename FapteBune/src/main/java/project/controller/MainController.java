@@ -8,9 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import project.entity.Persoana;
+import project.exception.InputException;
 import project.service.Service;
+import project.validator.ValidateName;
+import project.validator.ValidatePhoneNumber;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class MainController {
 
@@ -51,8 +55,9 @@ public class MainController {
     }
 
     private void initialize() {
-        String orase[] = {"Bucuresti", "Cluj-Napoca", "Constanta"};
+        String[] orase = {"Bucuresti", "Cluj-Napoca", "Constanta"};
         oras.getItems().addAll(orase);
+        observers = new ArrayList<>();
         persoaneModelGrade.setAll();
         persoaneListView.setItems(persoaneModelGrade);
         persoana = null;
@@ -65,10 +70,12 @@ public class MainController {
     private void persoaneSelectionChanges() {
         persoaneListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             persoana = newValue;
-            if(persoana != null)
+            if (persoana != null)
                 newTabs(persoana);
         });
     }
+
+    ArrayList<AjutController> observers;
 
     private void newTabs(Persoana persoana) {
         try {
@@ -77,8 +84,11 @@ public class MainController {
             Scene scene1 = new Scene(fxmlLoader1.load());
             AjutController ajutController = fxmlLoader1.getController();
             ajutController.setPersoana(persoana);
+            ajutController.setMainController(this);
             ajutController.setService(service);
-            stage1.setTitle("Doresc sa ajut!");
+            observers.add(ajutController);
+            stage1.setTitle("Denumire: " + persoana.getNume()
+                    + " " + persoana.getPrenume() + " | Oras: " + persoana.getOras());
             stage1.setScene(scene1);
             stage1.show();
 
@@ -92,10 +102,30 @@ public class MainController {
     }
 
     @FXML
-    public void inregistrare(){
-        service.addPersoana(numeTxt.getText(), prenumeTxt.getText(), usernameTxt.getText(), parolaTxt.getText(),
-                oras.getValue(), stradaTxt.getText(), numarTxt.getText(), telefonTxt.getText());
-        newTabs(new Persoana(service.getMaxId() + 1, numeTxt.getText(), prenumeTxt.getText(), usernameTxt.getText(), parolaTxt.getText(),
-                oras.getValue(), stradaTxt.getText(), numarTxt.getText(), telefonTxt.getText()));
+    public void inregistrare() {
+        try {
+            ValidateName validateName = new ValidateName();
+            validateName.validate(numeTxt.getText());
+            validateName.validate(prenumeTxt.getText());
+            ValidatePhoneNumber validatePhoneNumber = new ValidatePhoneNumber();
+            validatePhoneNumber.validate(telefonTxt.getText());
+            if (usernameTxt.getText().isEmpty() || parolaTxt.getText().isEmpty() || oras.getValue().isEmpty()
+                    || stradaTxt.getText().isEmpty() || Integer.parseInt(numarTxt.getText()) == 0)
+                throw new InputException("Input invalid!");
+            service.addPersoana(numeTxt.getText(), prenumeTxt.getText(), usernameTxt.getText(), parolaTxt.getText(),
+                    oras.getValue(), stradaTxt.getText(), numarTxt.getText(), telefonTxt.getText());
+            refreshPersoane();
+            newTabs(new Persoana(service.getMaxId() + 1, numeTxt.getText(), prenumeTxt.getText(), usernameTxt.getText(), parolaTxt.getText(),
+                    oras.getValue(), stradaTxt.getText(), numarTxt.getText(), telefonTxt.getText()));
+        } catch (InputException | NumberFormatException e) {
+            Alert a = new Alert(Alert.AlertType.ERROR);
+            a.setContentText(e.getMessage());
+            a.show();
+        }
+    }
+
+    public void update() {
+        for (AjutController ajutController : observers)
+            ajutController.refreshNevoi();
     }
 }

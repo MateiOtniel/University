@@ -1,11 +1,9 @@
 package project.repository;
 
 public interface IRepository<T> {
-    public void add(T entity);
+    void add(T entity);
 
-    public void remove(int id);
+    void save();
 
-    public void save();
-
-    public void read();
+    void read();
 }

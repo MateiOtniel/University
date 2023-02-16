@@ -1,15 +1,14 @@
 package project.repository;
 
-import project.entity.Entity;
-import project.entity.Nevoie;
 import project.entity.Persoana;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
-public class RepositoryPersoana implements IRepository<Persoana>{
+public class RepositoryPersoana implements IRepository<Persoana> {
 
-    private ArrayList<Persoana> list;
+    private List<Persoana> list;
     private final String URL;
     private final String user;
     private final String password;
@@ -26,11 +25,6 @@ public class RepositoryPersoana implements IRepository<Persoana>{
     public void add(Persoana entity) {
         list.add(entity);
         save();
-    }
-
-    @Override
-    public void remove(int id) {
-
     }
 
     @Override
@@ -84,20 +78,20 @@ public class RepositoryPersoana implements IRepository<Persoana>{
     }
 
     public ArrayList<Persoana> getAll() {
-        return list;
+        return (ArrayList<Persoana>) list;
     }
 
     public long getMaxId() {
         long id = 0;
-        for(Persoana persoana : list)
-            if(persoana.getId() > id)
+        for (Persoana persoana : list)
+            if (persoana.getId() > id)
                 id = persoana.getId();
         return id;
     }
 
     public Persoana getById(long id) {
-        for(Persoana persoana : list)
-            if(persoana.getId() == id)
+        for (Persoana persoana : list)
+            if (persoana.getId() == id)
                 return persoana;
         return null;
     }
