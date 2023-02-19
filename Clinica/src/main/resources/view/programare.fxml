@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.ProgramareController">
+   <children>
+      <ListView fx:id="mediciListView" layoutX="43.0" layoutY="46.0" prefHeight="307.0" prefWidth="334.0" />
+      <Label layoutX="43.0" layoutY="23.0" prefHeight="17.0" prefWidth="96.0" text="Medici" />
+      <Label fx:id="label" alignment="CENTER" layoutX="385.0" layoutY="46.0" prefHeight="43.0" prefWidth="198.0" text="Nu este nici un medic selectat!" />
+      <DatePicker fx:id="datePicker" layoutX="397.0" layoutY="89.0" />
+      <Spinner fx:id="spinner" layoutX="410.0" layoutY="132.0" max="16" min="8" />
+      <Button layoutX="442.0" layoutY="175.0" mnemonicParsing="false" onAction="#programare" text="Programeaza" />
+      <Label layoutX="383.0" layoutY="220.0" prefHeight="17.0" prefWidth="35.0" text="Nume" />
+      <Label layoutX="383.0" layoutY="250.0" prefHeight="17.0" prefWidth="35.0" text="CNP" />
+      <TextField fx:id="numeLabel" layoutX="422.0" layoutY="216.0" />
+      <TextField fx:id="CNPLabel" layoutX="422.0" layoutY="246.0" />
+   </children>
+</AnchorPane>

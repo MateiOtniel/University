@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PacientController">
+   <children>
+      <ListView fx:id="listaPacienti" layoutY="-1.0" prefHeight="400.0" prefWidth="317.0" />
+      <Button fx:id="TICBtn" layoutX="361.0" layoutY="123.0" mnemonicParsing="false" onAction="#TICClicked" prefHeight="37.0" prefWidth="65.0" text="TIC" />
+      <Button fx:id="TIIPBtn" layoutX="361.0" layoutY="246.0" mnemonicParsing="false" onAction="#TIIPClicked" prefHeight="37.0" prefWidth="65.0" text="TIIP" />
+      <Button fx:id="TIMBtn" layoutX="361.0" layoutY="183.0" mnemonicParsing="false" onAction="#TIMClicked" prefHeight="37.0" prefWidth="65.0" text="TIM" />
+   </children>
+</Pane>

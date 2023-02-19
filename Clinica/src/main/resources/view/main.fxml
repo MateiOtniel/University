@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.MainController">
+   <children>
+      <ListView fx:id="sectiiListView" layoutX="57.0" layoutY="24.0" prefHeight="176.0" prefWidth="485.0" />
+      <ListView fx:id="mediciListView" layoutX="57.0" layoutY="231.0" prefHeight="200.0" prefWidth="256.0" />
+   </children>
+</Pane>
