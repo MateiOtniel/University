@@ -26,5 +26,5 @@
   > *interface Repository -> partially implemented by AbstractRepository -> extended by FileRepository and DatabaseRepository (depending on the scope of the app)*
  * SOLID principles
  * Design patterns:
- > Singleton - the Service class (which manages to model the data received from repositories) have just one instance
+ > Singleton - the Service class (which manages to model the data received from repositories) have just one instance  
  > Observer - the Main Controller class updates all the items in the app when a database modification appears
