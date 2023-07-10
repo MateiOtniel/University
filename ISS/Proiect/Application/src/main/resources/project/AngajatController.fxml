@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.AngajatController">
+    <children>
+          <Button layoutX="232.0" layoutY="275.0" mnemonicParsing="false" onAction="#addPrezenta" prefHeight="46.0" prefWidth="131.0" text="Prezent" />
+          <Label layoutX="280.0" layoutY="14.0" text="Sarcini" />
+          <ListView fx:id="sarciniListView" layoutX="12.0" layoutY="32.0" prefHeight="233.0" prefWidth="572.0" />
+      <Button layoutX="493.0" layoutY="286.0" mnemonicParsing="false" onAction="#refreshSarciniAction" text="Refresh" />
+    </children>
+</AnchorPane>

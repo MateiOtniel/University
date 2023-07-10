@@ -1,0 +1,119 @@
+GDP & Freedom -> the learnt model: f(x) = -0.20472068873661545 + 0.3256633458288718 * x1 + 0.04842333249163809 * x2 
+error = 1.079976151465346
+
+GDP & Freedom -> the learnt model: f(x) = -0.20510742372576285 + 0.32541022064789044 * x1 + 0.048321958702904635 * x2 
+error = 1.079906027194729
+
+GDP & Freedom -> the learnt model: f(x) = [-1.28046494] + 1.2436634588583189 * x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+GDP & Freedom -> the learnt model: f(x) = [-1.28046494] + 1.2436634588583189 * x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189 * x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.4440695059350507 + 0.5396533805571211* x1 + 0.07220950905589837 * x2 
+error = 1.1516487662091135
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.44498963752136705 + 0.5406119383631495* x1 + 0.07215017499134652 * x2 
+error = 1.1520057597011648
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.44526044255782615 + 0.539457055168432* x1 + 0.07260514691209118 * x2 
+error = 1.1521421356933872
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.445168478618716 + 0.5397039462054912* x1 + 0.07236124940854634 * x2 
+error = 1.1518962723911168
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.44484661147627347 + 0.5387061942900042* x1 + 0.07223513384757677 * x2 
+error = 1.1512489594279125
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.4449826033776775 + 0.5393712138492653* x1 + 0.07262134897392412 * x2 
+error = 1.1521262814461024
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.44432250592086775 + 0.5391828960133658* x1 + 0.07243564471154693 * x2 
+error = 1.1517648627205193
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+
+Function: learnModel
+GDP & Freedom -> the learnt model: f(x) = -0.44394674730119227 + 0.539319009327999* x1 + 0.07222919286954317 * x2 
+error = 1.151523125384914
+
+Function: toolLearning
+GDP & Freedom -> the learnt model: f(x) = -1.2804649368466436 + 1.2436634588583189* x1 + 0.249074184934047 * x2 
+error = 0.42601888962983414
+
+Function: toolLearningAdapted
+GDP & Freedom -> the learnt model: f(x) = -1.2767377573520653 + 1.2359504348377408* x1 + 0.24579966487050267 * x2 
+error = 0.42947127973095983
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.SefController">
+    <children>
+        <ListView fx:id="angajatiListView" layoutX="14.0" layoutY="20.0" prefHeight="412.0" prefWidth="323.0" />
+        <Pane layoutX="336.0" layoutY="262.0" prefHeight="176.0" prefWidth="246.0">
+            <children>
+                <TextArea fx:id="sarcinaTextArea" layoutX="19.0" layoutY="6.0" prefHeight="100.0" prefWidth="202.0" promptText="descriere" />
+                <Button layoutX="64.0" layoutY="143.0" mnemonicParsing="false" onAction="#addSarcina" prefHeight="25.0" prefWidth="112.0" text="Adauga sarcina" />
+            <TextField fx:id="durataTextField" layoutX="19.0" layoutY="112.0" prefHeight="25.0" prefWidth="202.0" promptText="durata" />
+            </children>
+        </Pane>
+        <Pane layoutX="352.0" layoutY="9.0" prefHeight="275.0" prefWidth="214.0">
+            <children>
+                <TextField fx:id="numeTextField" alignment="CENTER" layoutX="33.0" layoutY="14.0" promptText="nume" />
+                <TextField fx:id="prenumeTextField" alignment="CENTER" layoutX="33.0" layoutY="46.0" promptText="prenume" />
+                <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="33.0" layoutY="79.0" promptText="username" />
+                <TextField fx:id="parolaTextField" alignment="CENTER" layoutX="33.0" layoutY="111.0" promptText="parola" />
+                <Button layoutX="33.0" layoutY="154.0" mnemonicParsing="false" onAction="#saveAngajat" prefHeight="25.0" prefWidth="149.0" text="Salveaza angajat" />
+              <Button layoutX="34.0" layoutY="187.0" mnemonicParsing="false" onAction="#modifyAngajat" prefHeight="26.0" prefWidth="149.0" text="Modifica" />
+              <Button layoutX="34.0" layoutY="224.0" mnemonicParsing="false" onAction="#deleteAngajat" prefHeight="26.0" prefWidth="149.0" text="Sterge" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
