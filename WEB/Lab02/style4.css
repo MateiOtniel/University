@@ -1,0 +1,116 @@
+.navlist {
+    position: relative;
+}
+
+.navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute; /* aici e modificarea */
+    top: 0;
+}
+
+.navlist li, .navlist a {
+    height: 84px;
+    width: 84px;
+    display: block;
+}
+
+.l1 {
+    left: 0;
+    background: url("image4.png") 0 84px;
+}
+
+.l1 a:hover{
+    background: url("image4.png") 0 0;
+}
+
+.l2 {
+    left: 84px;
+    background: url("image4.png") -84px 84px;
+}
+
+.l2 a:hover{
+    background: url("image4.png") -84px 0;
+}
+
+.l3 {
+    left: 168px;
+    background: url("image4.png") -168px 84px;
+}
+
+.l3 a:hover{
+    background: url("image4.png") -168px 0;
+}
+
+.l4 {
+    left: 252px;
+    background: url("image4.png") -252px 84px;
+}
+
+.l4 a:hover{
+    background: url("image4.png") -252px 0;
+}
+
+.l5 {
+    left: 336px;
+    background: url("image4.png") -336px 84px;
+}
+
+.l5 a:hover{
+    background: url("image4.png") -336px 0;
+}
+
+.l6 {
+    left: 420px;
+    background: url("image4.png") -420px 84px;
+}
+
+.l6 a:hover{
+    background: url("image4.png") -420px 0;
+}
+
+.l7 {
+    left: 504px;
+    background: url("image4.png") -504px 84px;
+}
+
+.l7 a:hover{
+    background: url("image4.png") -504px 0;
+}
+
+.l8 {
+    left: 588px;
+    background: url("image4.png") -588px 84px;
+}
+
+.l8 a:hover{
+    background: url("image4.png") -588px 0;
+}
+
+.l9 {
+    left: 672px;
+    background: url("image4.png") -672px 84px;
+}
+
+.l9 a:hover{
+    background: url("image4.png") -672px 0;
+}
+
+.l10 {
+    left: 756px;
+    background: url("image4.png") -756px 84px;
+}
+
+.l10 a:hover{
+    background: url("image4.png") -756px 0;
+}
+
+.l11 {
+    left: 840px;
+    background: url("image4.png") -840px 84px;
+}
+
+.l11 a:hover{
+    background: url("image4.png") -840px 0;
+}

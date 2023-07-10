@@ -4,11 +4,11 @@ import socialnetwork.exceptions.NetworkException;
 import socialnetwork.exceptions.RepositoryException;
 
 public interface Repository<T> {
-    public void add(T entity) throws NetworkException;
+    void add(T entity) throws NetworkException;
 
-    public void remove(int id) throws RepositoryException;
+    void remove(int id) throws RepositoryException;
 
-    public void save();
+    void save();
 
-    public void read();
+    void read();
 }

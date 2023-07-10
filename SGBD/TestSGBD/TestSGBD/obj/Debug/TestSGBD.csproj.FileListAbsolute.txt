@@ -1,0 +1,11 @@
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\bin\Debug\TestSGBD.exe.config
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\bin\Debug\TestSGBD.exe
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\bin\Debug\TestSGBD.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.csproj.AssemblyReference.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.csproj.SuggestedBindingRedirects.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.Properties.Resources.resources
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.csproj.GenerateResource.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.csproj.CoreCompileInputs.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.exe
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\SGBD\TestSGBD\TestSGBD\obj\Debug\TestSGBD.MainForm.resources

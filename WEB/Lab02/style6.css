@@ -1,0 +1,89 @@
+.all {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+    justify-content: space-between;
+}
+
+.container1 {
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+
+.container2 {
+    top: 100px;
+    left: 50px;
+    position: absolute;
+}
+
+.container3 {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    height: 40px;
+    width: 573px;
+    letter-spacing: 26px;
+    font-size: 28px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    outline: none;
+}
+
+.square-input {
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+}
+
+.square-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    margin-right: -2px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.square1 {
+    top: 50px;
+    left: 180px;
+    position: absolute;
+}
+
+.square2 {
+    top: 100px;
+    left: 180px;
+    position: absolute;
+}
+
+.square3 {
+    top: 150px;
+    left: 180px;
+    position: absolute;
+}

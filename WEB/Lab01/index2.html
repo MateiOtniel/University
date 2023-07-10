@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lab01</title>
+	</head>
+	<body>
+		<table valign="center">
+			<tr>
+				<td colspan="3">
+					<div>
+						<h1>Formular înscriere</h1>
+						<p><strong>*completează toate datele</strong></p>
+						<img src="poza.png" alt="Idk what this is" width="50" height="50">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name">Nume complet:</label>
+					<input type="text" id="name">
+				</td>
+				<td>
+					<label for="email">Email:</label>
+					<input type="email" id="email" size="20">
+				</td>
+				<td>
+					<label for="password">Parola:</label>
+					<input type="password" id="password" size="15">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>Sex:</div>
+					<select required>
+						<option value="">--Select--</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+					<br>
+					<label for="varsta">Vârstă:</label>
+					<input type="number" id="varsta" step="1">
+				</td>
+				<td>
+					<label><b>Preferințe</b></label>
+					<label>
+						<textarea rows="5" cols="24" maxlength="120"></textarea>
+					</label>
+				</td>
+				<td>
+					<label>Selecteaza o dată:</label>
+					<label>
+						<input type="date" max="2024-01-01">
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">
+					<table>
+						<tr>
+							<td>
+								<input value="De luat la cunostiinta:" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ol>
+									<li>Informație1</li>
+									<li>Informație2
+										<ol type="I">
+											<li>Subpunct1</li>
+											<li>
+												Subpunct2
+												<ul>
+													<li>Subsubpunct1</li>
+													<li>
+														Subsubpunct2
+														<ol type="A">
+															<li>Nota subsol1</li>
+															<li>Nota subsol2</li>
+														</ol>
+													</li>
+												</ul>
+											</li>
+										</ol>
+									</li>
+									<li>Informatie3</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="1">
+					<label for="checkbox">Am luat la cunostiință</label>
+					<input type="checkbox" id="checkbox" name="checkbox">
+					<button disabled></button>
+				</td>
+				<td>
+					<label for="events">Alege evenimente:</label><br><br>
+					<select id="events" multiple>
+						<option selected>Film</option>
+						<option>Teatru</option>
+						<option>Zoo</option>
+						<option>Festival</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" method="POST">
+						<fieldset>
+							<legend>Abonează-te pentru mai multe știri:</legend>
+							<input type="radio" id="subscribe-yes" name="subscribe" value="yes" checked>
+							<label for="subscribe-yes">Yes</label>
+
+							<input type="radio" id="subscribe-no" name="subscribe" value="no">
+							<label for="subscribe-no">No</label>
+						</fieldset>
+						<input type="submit" value="Trimite">
+						<a href="https://www.cs.ubbcluj.ro/~bufny/programare-web/laborator-html"
+							 target="_blank">
+							<span style="color:blue">Despre noi</span>
+						</a>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

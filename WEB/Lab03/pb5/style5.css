@@ -1,0 +1,10 @@
+#image-list li:not(:first-child) {
+    display: none;
+}
+
+li a {
+    position: absolute;
+    top: 270px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+}

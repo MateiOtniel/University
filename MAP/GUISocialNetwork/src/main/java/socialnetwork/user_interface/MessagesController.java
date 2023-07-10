@@ -75,8 +75,7 @@ public class MessagesController {
     private void showMessagesWithSelectedFriend() {
         messagesModelGrade.clear();
         List<Message> messageList = service.getAllMessages();
-        List<MessageDTO> newList = messageList.stream()
-                .filter(x -> (x.getTo() == loggedUser.getId() && x.getFrom() == selectedFriend.getId()) || (x.getTo() == selectedFriend.getId() && x.getFrom() == loggedUser.getId())).map(x -> {
+        List<MessageDTO> newList = messageList.stream().filter(x -> (x.getTo() == loggedUser.getId() && x.getFrom() == selectedFriend.getId()) || (x.getTo() == selectedFriend.getId() && x.getFrom() == loggedUser.getId())).map(x -> {
             if (x.getFrom() == loggedUser.getId()) return new MessageDTO("", x.getMessage());
             return new MessageDTO(x.getMessage(), "");
         }).collect(Collectors.toList());
@@ -121,7 +120,7 @@ public class MessagesController {
     }
 
     @FXML
-    private void refresh(){
+    private void refresh() {
         service.refreshMessages();
         showMessagesWithSelectedFriend();
     }

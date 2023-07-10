@@ -1,0 +1,24 @@
+.content{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    background-color: yellow;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    height: 200px;
+    width: 150px;
+}
+
+.container p{
+    margin: 0 0 0 10px;
+}

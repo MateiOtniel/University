@@ -202,10 +202,7 @@ public class Controller {
 
     private void refreshFriendRequests() {
         if (loggedInUser != null) {
-            List<Friendship> friendRequests = service.getAllFriendships(loggedInUser.getId())
-                    .stream()
-                    .filter(x -> x.getState() == 0 || x.getState() == 2)
-                    .collect(Collectors.toList());
+            List<Friendship> friendRequests = service.getAllFriendships(loggedInUser.getId()).stream().filter(x -> x.getState() == 0 || x.getState() == 2).collect(Collectors.toList());
             friendRequestModelGrade.setAll(friendRequests);
         } else friendRequestModelGrade.setAll(new LinkedList<>());
     }
