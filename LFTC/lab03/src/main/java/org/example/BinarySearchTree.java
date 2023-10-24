@@ -4,7 +4,7 @@ package org.example;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 public class BinarySearchTree {
 
@@ -68,14 +68,20 @@ public class BinarySearchTree {
         }
     }
 
-    public void setFIP(Map<String, FIP> fip) {
+    public void setFIP(List<FIP> fip) {
         setFIPRec(root, fip);
     }
 
-    private void setFIPRec(TreeNode root, Map<String, FIP> fip) {
+    private void setFIPRec(TreeNode root, List<FIP> fip) {
         if(root != null) {
             setFIPRec(root.left, fip);
-            fip.get(root.data.getKey()).setTsCode(String.valueOf(root.data.getValue()));
+//            fip.get(root.data.getKey()).setTsCode(String.valueOf(root.data.getValue()));
+            fip.stream()
+                .forEach(fipElement -> {
+                    if(fipElement.getAtom().equals(root.data.getKey())) {
+                        fipElement.setTsCode(String.valueOf(root.data.getValue()));
+                    }
+                });
             setFIPRec(root.right, fip);
         }
     }

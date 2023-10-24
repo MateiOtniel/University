@@ -5,11 +5,13 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    Set<String> atoms = new HashSet<>();
+    List<String> atoms = new ArrayList<>();
 
     Map<String, Integer> syntaxElements = new HashMap<>();
 
-    Map<String, FIP> fip = new HashMap<>();
+//    Map<String, FIP> fip = new HashMap<>();
+
+    List<FIP> fip = new ArrayList<>();
 
     BinarySearchTree identifiers = new BinarySearchTree(0);
 
@@ -17,16 +19,24 @@ public class Main {
 
     public void readProgramAndCreateLexicalAtoms() {
         try {
-            BufferedReader fin = new BufferedReader(new FileReader("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\program.txt"));
-            BufferedWriter fout = new BufferedWriter(new FileWriter("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\atoms.txt"));
+            BufferedReader fin = new BufferedReader(new FileReader("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\program.txt"));
+            BufferedWriter fout = new BufferedWriter(new FileWriter("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\atoms.txt"));
 
             String line;
+            int lineNo = 1;
             while((line = fin.readLine()) != null) {
                 String[] elements = line.split(" ");
+                for(String element : elements){
+                    if(isIdentifier(element) && element.length() > 250) {
+                        System.err.println("Identifier " + element + " on line " + lineNo + " is too long.");
+                        System.exit(1);
+                    }
+                    lineNo++;
+                }
                 Collections.addAll(atoms, elements);
             }
             fin.close();
-            atoms.remove("");
+            atoms = atoms.stream().filter(atom -> !atom.equals("")).toList();
             atoms.stream()
                 .forEach(atom -> {
                     try {
@@ -45,7 +55,7 @@ public class Main {
 
     private void readTableInputFromCSV() {
         try {
-            Scanner scanner = new Scanner(new File("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\table.csv"));
+            Scanner scanner = new Scanner(new File("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\table.csv"));
 
             while(scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -65,12 +75,16 @@ public class Main {
         atoms.stream()
             .forEach(atom -> {
                 if(syntaxElements.containsKey(atom)) {
-                    fip.put(atom, new FIP(syntaxElements.get(atom), "-"));
+//                    fip.put(atom, new FIP(syntaxElements.get(atom), "-"));
+                    fip.add(new FIP(atom, syntaxElements.get(atom), "-"));
                 } else {
-                    if(atom.length() > 250) {
-                        fip.put(atom, new FIP(-1, "ERROR"));
+                    if(atom.length() > 250 && isIdentifier(atom)) {
+//                        fip.put(atom, new FIP(-1, "ERROR"));
+                        fip.add(new FIP(atom, -1, "ERROR"));
                     } else {
-                        fip.put(atom, new FIP(isIdentifier(atom) ? syntaxElements.get("ID") : syntaxElements.get("CONST"),
+//                        fip.put(atom, new FIP(isIdentifier(atom) ? syntaxElements.get("ID") : syntaxElements.get("CONST"),
+//                            "?"));
+                        fip.add(new FIP(atom, isIdentifier(atom) ? syntaxElements.get("ID") : syntaxElements.get("CONST"),
                             "?"));
                     }
                 }
@@ -79,14 +93,13 @@ public class Main {
     }
 
     private void generateSymbolTables() {
-        fip.entrySet()
-            .stream()
+        fip.stream()
             .forEach(entry -> {
-                if(entry.getValue().code == 0 || entry.getValue().code == 1) {
-                    if(isIdentifier(entry.getKey())) {
-                        identifiers.insert(new BinarySearchTree.Pair(entry.getKey()));
+                if(entry.getCode() == 0 || entry.getCode() == 1) {
+                    if(isIdentifier(entry.getAtom())) {
+                        identifiers.insert(new BinarySearchTree.Pair(entry.getAtom()));
                     } else {
-                        constants.insert(new BinarySearchTree.Pair(entry.getKey()));
+                        constants.insert(new BinarySearchTree.Pair(entry.getAtom()));
                     }
                 }
             });
@@ -109,19 +122,18 @@ public class Main {
 
     private void saveAll() {
         saveFIPInCSV();
-        identifiers.saveToCSV("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\id.csv");
-        constants.saveToCSV("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\const.csv");
+        identifiers.saveToCSV("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\id.csv");
+        constants.saveToCSV("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\const.csv");
     }
 
     private void saveFIPInCSV() {
         try {
-            BufferedWriter fout = new BufferedWriter(new FileWriter("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab3\\src\\main\\resources\\fip.csv"));
+            BufferedWriter fout = new BufferedWriter(new FileWriter("C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\LFTC\\lab03\\src\\main\\resources\\fip.csv"));
 
-            fip.entrySet()
-                .stream()
+            fip.stream()
                 .forEach(entry -> {
                     try {
-                        fout.write(entry.getKey() + ":" + entry.getValue().code + ":" + entry.getValue().tsCode);
+                        fout.write(entry.getAtom() + ":" + entry.getCode() + ":" + entry.getTsCode());
                         fout.newLine();
                     } catch(IOException e) {
                         e.printStackTrace();
