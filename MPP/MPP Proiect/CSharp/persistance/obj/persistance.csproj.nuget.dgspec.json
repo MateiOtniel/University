@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\persistance.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\model\\model.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\model\\model.csproj",
+        "projectName": "model",
+        "projectPath": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\model\\model.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\persistance.csproj",
+        "projectName": "persistance",
+        "projectPath": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\persistance.csproj",
+        "packagesPath": "C:\\Users\\OTI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\model\\model.csproj": {
+                "projectPath": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\model\\model.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            },
+            "System.Data.SQLite.EF6": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            },
+            "System.Data.SQLite.Linq": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\bin\Debug\services.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\bin\Debug\services.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\bin\Debug\model.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\bin\Debug\model.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\obj\Debug\services.csproj.AssemblyReference.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\obj\Debug\services.csproj.CoreCompileInputs.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\obj\Debug\services.csproj.CopyComplete
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\obj\Debug\services.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\services\obj\Debug\services.pdb

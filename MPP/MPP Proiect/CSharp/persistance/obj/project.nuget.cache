@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "zv5T4qnRfCg3FzIvKsm4UPMuTO88UKfhUxE+5OkxLa35dASj4ylTE5k9K2fx3m7rV+qGFa/2XJtjYsQ9OQP0vg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OTI\\OneDrive\\Desktop\\Facultate\\Materii\\MPP Proiect\\CSharp\\persistance\\persistance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OTI\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.117\\stub.system.data.sqlite.core.netframework.1.0.117.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\system.data.sqlite\\1.0.117\\system.data.sqlite.1.0.117.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\system.data.sqlite.core\\1.0.117\\system.data.sqlite.core.1.0.117.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.117\\system.data.sqlite.ef6.1.0.117.nupkg.sha512",
+    "C:\\Users\\OTI\\.nuget\\packages\\system.data.sqlite.linq\\1.0.117\\system.data.sqlite.linq.1.0.117.nupkg.sha512"
+  ],
+  "logs": []
+}

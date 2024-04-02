@@ -1,0 +1,16 @@
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\persistance.dll.config
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\persistance.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\persistance.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\EntityFramework.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\System.Data.SQLite.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\log4net.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\model.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\bin\Debug\model.pdb
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\obj\Debug\persistance.csproj.AssemblyReference.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\obj\Debug\persistance.csproj.CoreCompileInputs.cache
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\obj\Debug\persistance.csproj.CopyComplete
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\obj\Debug\persistance.dll
+C:\Users\OTI\OneDrive\Desktop\Facultate\Materii\MPP Proiect\CSharp\persistance\obj\Debug\persistance.pdb
