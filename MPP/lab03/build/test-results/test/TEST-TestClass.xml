@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestClass" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T11:32:59" hostname="DESKTOP-8PPMB1T" time="0.369">
+  <properties/>
+  <testcase name="Test" classname="TestClass" time="0.369"/>
+  <system-out><![CDATA[14 Mar 2023 13:32:59,576 INFO  CarsDBRepository 17 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:./database/cars.db} 
+Tests passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

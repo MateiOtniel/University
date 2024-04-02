@@ -1,0 +1,2 @@
+—14 Mar 2023 13:32:59,576 INFO  CarsDBRepository 17 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:./database/cars.db} 
+Tests passed
